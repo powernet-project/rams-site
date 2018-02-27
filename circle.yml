@@ -12,5 +12,5 @@ deployment:
     production:
         branch: master
         commands:
-        # deploy to AppEngine
+        - echo $PASSWORD
         - sshpass -p $PASSWORD scp -rvC ./ ramr@cardinal.stanford.edu:WWW
