@@ -12,5 +12,4 @@ deployment:
     production:
         branch: master
         commands:
-        - echo $PASSWORD
         - sshpass -p $PASSWORD scp -rvC ./ ramr@cardinal.stanford.edu:WWW
