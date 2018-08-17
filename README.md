@@ -17,4 +17,12 @@ None at this time. This project is a simple and trivial web site. There are basi
 
 To run the project simply open the index page. Beware of browser restrictions when serving sites from the local FS.
 
+However, if you absolutely want to run this served from localhost, assuming you are on OSX with python 3, just navigate to the folder and run:
+
+```
+python -m http.server
+```
+
+Then navigate to localhost:8000 on your browser of choice.
+
 Everything else should be pretty intuitive and Google-able. 
