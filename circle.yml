@@ -6,7 +6,7 @@ jobs:
       #- sudo apt-get install sshpass
 
   steps:
-    run: echo $USERNAME $PASSWORD
+    - run: echo $USERNAME $PASSWORD
 
   # deployment:
   #     production:
