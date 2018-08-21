@@ -3,15 +3,13 @@ jobs:
   build:
     docker:
       - image: circleci/node:6.3.1
+    steps:
+      - checkout
+      - run: echo $USERNAME $PASSWORD
   # dependencies: 
   #   pre:
       #- sudo apt-get update
       #- sudo apt-get install sshpass
-
-  steps:
-    - checkout
-    - run: echo $USERNAME $PASSWORD
-
   # deployment:
   #     production:
   #         branch: master
