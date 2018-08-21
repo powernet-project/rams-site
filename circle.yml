@@ -1,11 +1,15 @@
 version: 2
 jobs:
-  test:
-    override:
-      - echo "test"
-  deployment:
-      production:
-        branch: master
-        commands:
-        - echo $USERNAME
-        - echo $PASSWORD
+  # dependencies: 
+  #   pre:
+      #- sudo apt-get update
+      #- sudo apt-get install sshpass
+
+  steps:
+    run: echo $USERNAME $PASSWORD
+
+  # deployment:
+  #     production:
+  #         branch: master
+  #         commands:
+          #- sshpass -p $PASSWORD scp -rvC ./ ramr@cardinal.stanford.edu:WWW
