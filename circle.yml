@@ -1,7 +1,8 @@
+version: 2
 dependencies: 
   pre:
-    - sudo apt-get update
-    - sudo apt-get install sshpass
+    #- sudo apt-get update
+    #- sudo apt-get install sshpass
 
 test:
   override:
@@ -14,4 +15,4 @@ deployment:
         commands:
         - echo $USERNAME
         - echo $PASSWORD
-        - sshpass -p $PASSWORD scp -rvC ./ ramr@cardinal.stanford.edu:WWW
+        #- sshpass -p $PASSWORD scp -rvC ./ ramr@cardinal.stanford.edu:WWW
