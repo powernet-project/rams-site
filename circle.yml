@@ -1,19 +1,11 @@
 version: 2
 jobs:
-  dependencies: 
-    pre:
-      #- sudo apt-get update
-      #- sudo apt-get install sshpass
-
   test:
     override:
-      # run local unit tests - we have none at this time
       - echo "test"
-
   deployment:
       production:
-          branch: master
-          commands:
-          - echo $USERNAME
-          - echo $PASSWORD
-          #- sshpass -p $PASSWORD scp -rvC ./ ramr@cardinal.stanford.edu:WWW
+        branch: master
+        commands:
+        - echo $USERNAME
+        - echo $PASSWORD
